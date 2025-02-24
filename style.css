@@ -8,12 +8,19 @@
     margin: auto;
       /* background-color: #06BF9D; */
     width: 500px;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
     margin-top: 15%;
     margin-bottom: 15%;
     display: flex;
     border: 2px solid black;
+}
+@media (max-width:480px) {
+    .conteneur{
+    width: 300px;
+    /* height: 300px;  */
+    margin-top: 25%;
+    }
 }
 /* colonne 1 */
 .colonne-1{
@@ -93,12 +100,18 @@ button{
 }
 /* Collone Gauche */
 .col1-accueil{
-    width: 15%;
+    width: 12%;
     margin-right: 1%;
     background-color: white;
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+/* pour les telephone */
+@media (max-width: 480px) {
+    .col1-accueil{
+        width: 30%;
+    }
 }
 .dashboard{
     background-color: #01A696;
