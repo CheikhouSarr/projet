@@ -7,12 +7,12 @@
 .conteneur{
     margin: auto;
       /* background-color: #06BF9D; */
-    width: 400px;
-    height: 100%;
+    width: 500px;
+    height: 250px;
     border-radius: 10px;
-    margin-top: 25%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     display: flex;
-    
     border: 2px solid black;
 }
 /* colonne 1 */
