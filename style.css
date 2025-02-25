@@ -15,11 +15,12 @@
     display: flex;
     border: 2px solid black;
 }
-@media (max-width:480px) {
+@media (max-width:480px)  {
     .conteneur{
-    width: 300px;
+    width: 370px;
     /* height: 300px;  */
-    margin-top: 50%;
+    /* margin-top: 75%; */
+    margin-top: 250px;
     }
 }
 /* colonne 1 */
