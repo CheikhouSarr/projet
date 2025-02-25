@@ -3,31 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* conteneur principal */
 .conteneur{
     margin: auto;
       /* background-color: #06BF9D; */
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     border-radius: 10px;
-    margin-top: 15%;
-    margin-bottom: 15%;
+    margin-top: 8%;
     display: flex;
     border: 2px solid black;
 }
-@media (max-width:480px)  {
+/* lpour les tablets */
+@media (max-width:768px)  {
     .conteneur{
-    width: 370px;
+    width: 90%;
     /* height: 300px;  */
     /* margin-top: 75%; */
-    margin-top: 250px;
+    margin-top: 50%;
     }
     .colonne-1{
-        width: 35%;
+        width: 40%;
 
     }
     .colonne-2{
-        width: 65%;
+        width: 60%;
         margin: 8px;
     }
 }
@@ -35,14 +42,13 @@
 .colonne-1{
     background-color: #06BF9D;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    width: 40%;
 }
 img{
     border-radius: 25%;
 }
-
+/* colonne 1 */
 .colonne-2{
     display: flex;
     justify-content: center;
@@ -59,6 +65,8 @@ form{
 }
 .connexion{
     padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 p{
     text-align: center;
@@ -81,7 +89,6 @@ a{
 }
 .connecter{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     
 }
@@ -92,9 +99,9 @@ button{
     border: none;
     height: 20px;
 }
-/* img{
-    margin: 50% 25% 25% 50%;
-} */
+img{
+    width: 100%;
+}
 /* colonne 2 */
 
 
@@ -116,11 +123,31 @@ button{
     flex-direction: column;
     padding: 10px;
 }
-/* pour les telephone */
-@media (max-width: 480px) {
-    .col1-accueil{
-        width: 30%;
-    }
+.img-prof{
+    position: absolute;
+    width: 45px;
+    top: -10px;
+    left:  10px;
+}
+.p-gauche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #02A797;
+    width: 100%;
+    padding: 10px;
+    text-indent: 30px;
+    font-weight: bolder;
+}
+i{
+    margin-right: 12px;
+    display: block;
+}
+.dashboard ,.artcle ,.categorie,.auteur,.commm,.media,.contact,.param,.page{
+    margin: 5px 0px;
+    font-size: 100%;
+    font-weight: lighter;
+    
 }
 .dashboard{
     background-color: #01A696;
@@ -137,7 +164,137 @@ button{
     color: white;
     padding: 2px;
 }
+
 /* colonne Droite */
 .col2-accueil{
-    width: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
+.fa-bars{
+    color:#01A696;
+}
+
+/* ligne 1 */
+.imgG-prof{
+    width: 40px;
+    position: relative;
+    left: 20px;
+    top: -5px;
+}
+.ligne1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #dde1e7;
+}
+.infoTopDroite{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+}
+.recherche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.search{
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #01A696;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    right: 120px;
+}
+
+
+/* ligne 2  */
+.ligne2{
+height: 35%;
+display:  flex;
+flex-direction: column;
+justify-content: flex-end;
+margin: 15px;
+font-size: 20px;
+}
+.DAS{
+    font-size: 15px;
+}
+
+/* ligne 3  */
+
+.ligne3{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.col-L3{
+    padding: 10px;
+    background-color: white;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    color:#01A696;
+}
+.pG{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.nrb{
+    font-weight: bold;
+    font-size: 20px;
+}
+.pD{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ligne 4 tableau */
+
+.ligne4{
+    width: 100%;
+
+}
+table{
+    width:99%;
+}
+th{
+    background-color: #ffff;
+    padding: 15px;
+    
+}
+td{
+    background-color: #dde1e7;
+    padding: 15px;
+}
+tr{
+    border: 0 px ;
+}
+
+
+/* pour les tabletes */
+@media screen and (max-width:768px) {
+    .col1-accueil{
+        gap: 10px;
+        width: 20%;
+    } 
+}
+
+/* pour les telephone */
+/* @media (max-width: 480px) {
+    .col1-accueil{
+       
+    }
+} */
+
