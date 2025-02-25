@@ -22,6 +22,14 @@
     /* margin-top: 75%; */
     margin-top: 250px;
     }
+    .colonne-1{
+        width: 35%;
+
+    }
+    .colonne-2{
+        width: 65%;
+        margin: 8px;
+    }
 }
 /* colonne 1 */
 .colonne-1{
