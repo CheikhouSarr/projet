@@ -11,6 +11,7 @@ body {
     background-color: #06bf9d2a;
 }
 
+
 /* conteneur principal */
 .conteneur{
     margin: auto;
@@ -152,7 +153,7 @@ li{
 
 
 .col1-accueil{
-    width: 16%;
+    width: 200px;
     margin-right: 1%;
     background-color: white;
     display: flex;
