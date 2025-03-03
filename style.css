@@ -159,7 +159,32 @@ li{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    transition: all 0.5s ease;
 }
+
+#poin-hor{
+    display: none;
+}
+#label{
+    position: absolute;
+    left: 170px;
+    transition: all 0.5s ease;
+}
+
+#poin-hor:checked ~ .col1-accueil{
+    transform: translateX(-100%) ;
+
+}
+
+#poin-hor:checked ~ #label {
+    left: 20px;
+}
+#poin-hor:checked ~ .col2-accueil{
+    margin-left: -200px;
+    
+
+}
+
 .img-prof{
     position: absolute;
     width: 40px;
